@@ -1,6 +1,14 @@
 # phase-1-project-NASAwebapp
 This is my phase 1 project demonstrating what I've learned in the first phase and putting it all together. I will be using NASA's free AstroPhoto of the day API to build a dynamic rendering of this popular API, that will have some click and hover events, a like button, a share to instagram button, as well as a slick, modern css design.
 
+
 # Goals for the project
 
 To demonstrate that I can use javascript to dynamicly manipulate and add to the html, as well as the css design of the web page. To demonstrate that I can use Javascript to access an API and use its data to build out the content of the website. To demonstrate my understtanding of implementing events to create a dynamic user experience of the webpage.
+
+# Project Overview
+
+
+# First steps
+
+Building the skeleton of the HTML. Setting up the HTML page so that it has the heading, body, and appropriate divs to be changed and to place the API in with javascript. Setting placeholder text and  Adding the css page link and javascript page link to begin building it out.
