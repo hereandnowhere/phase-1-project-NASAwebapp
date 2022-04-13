@@ -2,15 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
     <title>NASA Space Photo Of The Day</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./src/index.js"></script>
 </head>
 <body>
-    <div id="space_photo">
-        <h1 id="photo_title">Photo Of The Day</h1>
+    <div id="main">
+        <div id="space_photo_header">
+            <h1 id="photo_title">Photo Of The Day</h1>
+        </div>
+    
+        <div id="space_photo">
+            <img>
+        </div>
+    
+        <div id="photo_description">
+            <p>This is where the NASA description from the API goes.</p>
+            <p>This is further information on how the photo was taken.</p>
+            <p>The last relevent information from the API</p>
+        </div>
+    
+        <div id="star_date">
+            <h4>Today's date 0/00/0000</h4>
+        </div>
     </div>
-    <div id="photo_description">
-        <p>This is where the NASA description from the API goes</p>
-    </div>
+
 </body>
