@@ -1,0 +1,26 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(black,rgb(0, 0, 123))
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    align-content: center;
+    margin: 8px;
+    background: linear-gradient(black,rgb(0, 0, 123))
+}
+
+#space_photo {
+    align-content: center;
+    text-align: center;
+    color:rgb(213, 200, 223);
+}
+
+#photo_description {
+    align-content: center;
+    text-align: center;
+    color:rgb(213, 200, 223);
+}
