@@ -16,11 +16,14 @@ body {
 #space_photo {
     align-content: center;
     text-align: center;
-    color:rgb(213, 200, 223);
+    color:rgb(202, 213, 223);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 #photo_description {
     align-content: center;
     text-align: center;
-    color:rgb(213, 200, 223);
+    color:rgb(202, 213, 223);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px
 }
