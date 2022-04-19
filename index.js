@@ -30,9 +30,10 @@ $ Creates a function to update the text and img using the NASA API, taking the j
 
 
 function fetchNasaApi(){
-    fetch("https://api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
+    fetch("https://ooops.api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
     .then(response => response.json())
     .then(nasa => handleNasaApi(nasa))
+    .catch(error => couldNotLoadApi(error))
 };
 
 function handleNasaApi (data){
@@ -50,7 +51,8 @@ function handleNasaApi (data){
     return;
 };
 
-function couldNotLoadApi(){
+function couldNotLoadApi(error){
+    alert(`There was an ${error} error! Turn back brave spacefarer!`)
     const body = document.querySelector('body');
     body.innerHTML = `<div id="main">
                         <div id="space_photo_header">
@@ -75,7 +77,9 @@ function couldNotLoadApi(){
                             <h4 id="date">Today's date 0/00/0000</h4>
                         </div>
                     </div>`;
-}
+    return;
+    
+};
 
 
 function init(){
