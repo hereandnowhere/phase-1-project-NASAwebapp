@@ -15,8 +15,22 @@ This script will endeavor to do these things:
 function fetchNasaApi(){
     fetch("https://api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
     .then(response => response.json())
-    .then(data =>{})
+    .then(data => handleNasaApi(data))
 };
 
+function handleNasaApi (data){
+    const photoTitle = document.querySelector('h1#photo_title');
+    const photo = document.querySelector('img#photo_of_the_day');
+    const discription = document.querySelector('div#photo_discription');
+    const photoSource = document.querySelector('div#photo_source');
 
     
+    return;
+};
+
+function init(){
+    fetchNasaApi();
+    return fetchNasaApi
+};
+
+console.log(init());
