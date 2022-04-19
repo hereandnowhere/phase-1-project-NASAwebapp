@@ -60,21 +60,21 @@ function couldNotLoadApi(error){
                         </div>
 
                         <div id="space_photo">
-                            <img id="photo_of_the_day">
+                            <img id="photo_of_the_day" src="https://piximus.net/media/4767/funny-space-comics-1.jpg">
                         </div>
 
                         <div id="photo_info">
                             <div id="photo_discription">
-                                <p id="discription">This is where the NASA description from the API goes. If it had loaded...</p>
+                                <p id="discription">This is where the NASA description from the API would go. If it had loaded...</p>
                             <div/>
                         </div>
         
                         <div id="photo_source">
-                            <p id="source">Image Source and copyright.</p>
+                            <p id="source">Woooooooooooopsie!</p>
                         </div>
 
                         <div id="star_date">
-                            <h4 id="date">Today's date 0/00/0000</h4>
+                            <h4 id="date">There is no date in no-where-land...</h4>
                         </div>
                     </div>`;
     return;
