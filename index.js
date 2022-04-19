@@ -1,6 +1,12 @@
 /*
+key:
+~ = Needs to be completed
+# = in progress of dev.
+! = bugged
+$ = complete and functioning properly
+
 This script will endeavor to do these things:
-~ Create a function that uses a fetch command to pull NASA's picture of the day 
+$ Create a function that uses a fetch command to pull NASA's picture of the day 
     API and updates the relevent div elements in the DOM.
             // Saving the NASA API key and instructions for web request //
             <!-- Generate API Key
@@ -15,7 +21,7 @@ This script will endeavor to do these things:
             Account ID: 67a3c90c-dd2a-42c7-8c4e-339035e35789 -->
 ~ Creates a function for a mouse over event on the picture to enlarge the picture.
 ~ Creates a function for a click event that reveals the info about the picture.
-~ Creates a function to update the text using the NASA API, taking the json as an argument.
+$ Creates a function to update the text and img using the NASA API, taking the json as an argument.
 ~ Have a render function in a DOM content loaded event that calls all css functions, 
     updates the relevant divs, calls the fetch command, and calls the event functions, 
     and renders once everything is loaded.
