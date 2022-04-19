@@ -25,7 +25,7 @@ $ Creates a function to update the text and img using the NASA API, taking the j
 ~ Have a render function in a DOM content loaded event that calls all css functions, 
     updates the relevant divs, calls the fetch command, and calls the event functions, 
     and renders once everything is loaded.
-~ Create a catch as a placeholder in case the API doesn't load or something goes wrong
+# Create a catch as a placeholder in case the API doesn't load or something goes wrong
 */
 
 
@@ -49,6 +49,34 @@ function handleNasaApi (data){
     dateNasa.innerText = `StarDate ${data.date}`;
     return;
 };
+
+function couldNotLoadApi(){
+    const body = document.querySelector('body');
+    body.innerHTML = `<div id="main">
+                        <div id="space_photo_header">
+                             <h1 id="photo_title">Photo Of The Day Could Not Load</h1>
+                        </div>
+
+                        <div id="space_photo">
+                            <img id="photo_of_the_day">
+                        </div>
+
+                        <div id="photo_info">
+                            <div id="photo_discription">
+                                <p id="discription">This is where the NASA description from the API goes. If it had loaded...</p>
+                            <div/>
+                        </div>
+        
+                        <div id="photo_source">
+                            <p id="source">Image Source and copyright.</p>
+                        </div>
+
+                        <div id="star_date">
+                            <h4 id="date">Today's date 0/00/0000</h4>
+                        </div>
+                    </div>`;
+}
+
 
 function init(){
     fetchNasaApi();
