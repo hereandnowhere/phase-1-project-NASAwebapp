@@ -46,8 +46,6 @@ body {
 
 #star_date {
     position: absolute;
-    left:33%;
-    bottom:0%;
     color:rgb(202, 213, 223);
     font-family: 'Lucida Sans', Arial, sans-serif; 
 }

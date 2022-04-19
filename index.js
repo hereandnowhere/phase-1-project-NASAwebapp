@@ -9,22 +9,29 @@ This script will endeavor to do these things:
 ~ Have a render function in a DOM content loaded event that calls all css functions, 
     updates the relevant divs, calls the fetch command, and calls the event functions, 
     and renders once everything is loaded.
+~ Create a catch as a placeholder in case the API doesn't load or something goes wrong
 */
 
 
 function fetchNasaApi(){
     fetch("https://api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
     .then(response => response.json())
-    .then(data => handleNasaApi(data))
+    .then(nasa => handleNasaApi(nasa))
 };
 
 function handleNasaApi (data){
-    const photoTitle = document.querySelector('h1#photo_title');
-    const photo = document.querySelector('img#photo_of_the_day');
-    const discription = document.querySelector('div#photo_discription');
-    const photoSource = document.querySelector('div#photo_source');
+    const photoTitleNasa = document.querySelector('h1#photo_title');
+    const photoNasa = document.querySelector('img#photo_of_the_day');
+    const discriptionNasa = document.querySelector('p#discription');
+    const photoSourceNasa = document.querySelector('p#source');
+    const dateNasa = document.querySelector('h4#date');
 
-    
+    photoTitleNasa.innerText = data.title;
+    photoNasa.src = data.url;
+    discriptionNasa.innerText = data.explanation;
+    photoSourceNasa.innerText = data.copyright;
+    dateNasa.innerText = `StarDate ${data.date}`;
+
     return;
 };
 
