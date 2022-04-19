@@ -36,10 +36,10 @@ function handleNasaApi (data){
     const photoSourceNasa = document.querySelector('p#source');
     const dateNasa = document.querySelector('h4#date');
 
-    photoTitleNasa.innerText = data.title;
+    photoTitleNasa.innerText = `Photo of the Day: ${data.title}`;
     photoNasa.src = data.url;
     discriptionNasa.innerText = data.explanation;
-    photoSourceNasa.innerText = data.copyright;
+    photoSourceNasa.innerText = `Source: ${data.copyright}`;
     dateNasa.innerText = `StarDate ${data.date}`;
     return;
 };
