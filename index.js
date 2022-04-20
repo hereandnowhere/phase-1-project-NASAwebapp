@@ -25,12 +25,19 @@ $ Creates a function to update the text and img using the NASA API, taking the j
 ~ Have a render function in a DOM content loaded event that calls all css functions, 
     updates the relevant divs, calls the fetch command, and calls the event functions, 
     and renders once everything is loaded.
-# Create a catch as a placeholder in case the API doesn't load or something goes wrong
+$ Create a catch as a placeholder in case the API doesn't load or something goes wrong
 */
 
 
+function init(){
+    fetchNasaApi();
+    return fetchNasaApi
+};
+
+console.log(init());
+
 function fetchNasaApi(){
-    fetch("https://ooops.api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
     .then(response => response.json())
     .then(nasa => handleNasaApi(nasa))
     .catch(error => couldNotLoadApi(error))
@@ -51,8 +58,9 @@ function handleNasaApi (data){
     return;
 };
 
+
 function couldNotLoadApi(error){
-    alert(`There was an ${error} error! Turn back brave spacefarer!`)
+    alert(`There was a ${error} error! Turn back brave spacefarer!`)
     const body = document.querySelector('body');
     body.innerHTML = `<div id="main">
                         <div id="space_photo_header">
@@ -80,11 +88,3 @@ function couldNotLoadApi(error){
     return;
     
 };
-
-
-function init(){
-    fetchNasaApi();
-    return fetchNasaApi
-};
-
-console.log(init());
