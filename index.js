@@ -29,12 +29,12 @@ $ Create a catch as a placeholder in case the API doesn't load or something goes
 */
 
 
+document.addEventListener('DOMContentLoaded', init);
+
 function init(){
     fetchNasaApi();
     return fetchNasaApi
 };
-
-init();
 
 function fetchNasaApi(){
     fetch("https://api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
