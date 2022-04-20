@@ -58,6 +58,10 @@ function handleNasaApi (data){
     return;
 };
 
+function clickForDiscription(){};
+
+function hoverOverPicture(){};
+
 function couldNotLoadApi(error){
     alert(`There was a ${error} error! Turn back brave spacefarer!`)
     const body = document.querySelector('body');
