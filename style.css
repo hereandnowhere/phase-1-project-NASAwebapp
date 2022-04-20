@@ -20,13 +20,11 @@ body {
 
 #space_photo_header {
     display: inline-block;
-    align-content: left;
+    align-content: center;
     text-align: center;
     color:rgb(202, 213, 223);
-    font-family: 'Lato', sans-serif; 
-    font-size: 20px; 
-    font-weight: 90; 
-    margin: 3 3 20px;
+    font-family: 'Lucida Sans', Arial, sans-serif; 
+    font-size: 90%; 
 }
 
 #space_photo{
@@ -52,6 +50,7 @@ body {
 }
 
 #photo_discription{
+    visibility:visible;
     display: inline-block;
     text-align: justify;
     border-radius: 10px;

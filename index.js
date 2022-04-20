@@ -22,7 +22,7 @@ $ Create a function that uses a fetch command to pull NASA's picture of the day
 ~ Creates a function for a mouse over event on the picture to enlarge the picture.
 ~ Creates a function for a click event that reveals the info about the picture.
 $ Creates a function to update the text and img using the NASA API, taking the json as an argument.
-~ Have a render function in a DOM content loaded event that calls all css functions, 
+# Have a render function in a DOM content loaded event that calls all css functions, 
     updates the relevant divs, calls the fetch command, and calls the event functions, 
     and renders once everything is loaded.
 $ Create a catch as a placeholder in case the API doesn't load or something goes wrong
@@ -54,7 +54,7 @@ function handleNasaApi (data){
     photoNasa.src = data.url;
     discriptionNasa.innerText = data.explanation;
     photoSourceNasa.innerText = `Source: ${data.copyright}`;
-    dateNasa.innerText = `StarDate ${data.date}`;
+    dateNasa.innerText = `Today's Date: ${data.date}`;
     return;
 };
 
@@ -70,19 +70,6 @@ function couldNotLoadApi(error){
                             <img id="photo_of_the_day" src="https://piximus.net/media/4767/funny-space-comics-1.jpg">
                         </div>
 
-                        <div id="photo_info">
-                            <div id="photo_discription">
-                                <p id="discription">This is where the NASA description from the API would go. If it had loaded...</p>
-                            <div/>
-                        </div>
-        
-                        <div id="photo_source">
-                            <p id="source">Woooooooooooopsie!</p>
-                        </div>
-
-                        <div id="star_date">
-                            <h4 id="date">There is no date in no-where-land...</h4>
-                        </div>
                     </div>`;
     return;
     
