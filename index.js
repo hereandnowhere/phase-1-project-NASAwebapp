@@ -34,7 +34,7 @@ function init(){
     return fetchNasaApi
 };
 
-console.log(init());
+init();
 
 function fetchNasaApi(){
     fetch("https://api.nasa.gov/planetary/apod?api_key=FCAJPCgyt6BxZj8Ey2QEiO17MVUfkOpPTVKoPkFK")
@@ -57,7 +57,6 @@ function handleNasaApi (data){
     dateNasa.innerText = `StarDate ${data.date}`;
     return;
 };
-
 
 function couldNotLoadApi(error){
     alert(`There was a ${error} error! Turn back brave spacefarer!`)
