@@ -12,3 +12,8 @@ To demonstrate that I can use javascript to dynamicly manipulate and add to the 
 # First steps
 
 Building the skeleton of the HTML. Setting up the HTML page so that it has the heading, body, and appropriate divs to be changed and to place the API in with javascript. Setting placeholder text and  Adding the css page link and javascript page link to begin building it out.
+
+# Second Steps
+
+Next we are going to use Javascript to fetch the API data from NASA, use functions to turn the data into usuable content, then update the dom with the new information from NASA's space photo object.
+
