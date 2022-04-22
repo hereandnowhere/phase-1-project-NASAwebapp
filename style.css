@@ -19,11 +19,12 @@ body {
 }
 
 #space_photo_header {
-    display: inline-block;
-    align-content: center;
+    align-content:center;
     text-align: center;
     color:rgb(202, 213, 223);
-    font-family: 'Lucida Sans', Arial, sans-serif; 
+    font-family: nasalization, sans-serif;
+    font-weight: 400;
+    font-style: normal;; 
     font-size: 90%; 
 }
 
@@ -45,7 +46,7 @@ body {
 
 #photo_info {
     color:rgb(202, 213, 223);
-    font-family: 'Lucida Sans', Arial, sans-serif; 
+    font-family: nasalization, 'Lucida Sans', Arial, sans-serif; 
     font-size: auto;
 }
 
@@ -60,14 +61,15 @@ body {
     max-height: fit-content;
     height: auto;
     position:absolute;
+    font-family: 'Lucida Sans', Arial, sans-serif;
     font-size: 1.8vw;
     top: 45%;
     left: auto;
     right:auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -60%);
 }
 #star_date {
     vertical-align: bottom;
     color:rgb(202, 213, 223);
-    font-family: 'Lucida Sans', Arial, sans-serif; 
+    font-family: nasalization, sans-serif; 
 }
