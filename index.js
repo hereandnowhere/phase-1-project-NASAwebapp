@@ -20,7 +20,7 @@ $ Create a function that uses a fetch command to pull NASA's picture of the day
             Account Email: jvine1235@gmail.com
             Account ID: 67a3c90c-dd2a-42c7-8c4e-339035e35789 -->
 ~ Creates a function for a mouse over event on the picture to enlarge the picture.
-~ Creates a function for a click event that reveals the info about the picture.
+# Creates a function for a click event that reveals the info about the picture.
 $ Creates a function to update the text and img using the NASA API, taking the json as an argument.
 # Have a render function in a DOM content loaded event that calls all css functions, 
     updates the relevant divs, calls the fetch command, and calls the event functions, 
@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init(){
     fetchNasaApi();
-    return fetchNasaApi
+    document.querySelector('img#photo_of_the_day').addEventListener("click", clickForDiscription);
+    return;
 };
 
 function fetchNasaApi(){
@@ -53,16 +54,30 @@ function handleNasaApi (data){
     photoTitleNasa.innerText = `Photo of the Day: ${data.title}`;
     photoNasa.src = data.url;
     discriptionNasa.innerText = data.explanation;
-    photoSourceNasa.innerText = `Source: ${data.copyright}`;
     dateNasa.innerText = `Today's Date: ${data.date}`;
+    if (data.copyright === undefined){
+        photoSourceNasa.innerText = "";
+    } else{
+        photoSourceNasa.innerText = `Source: ${data.copyright}`;
+    }
     return;
 };
 
 function clickForDiscription(e){
-    document.body.addEventListener()
+    const photoDiscription = document.getElementById('photo_discription');
+    const discrptStyle = getComputedStyle(photoDiscription);
+    const discrptVisibility = discrptStyle.visibility;
+    console.log(discriptVisibility);
+    if (discrptVisibility == 'hidden'){
+        photoDiscription.style.visibility = 'visible';
+    } else {
+        photoDiscription.style.visibility = 'hidden';
+    }
 };
 
-function hoverOverPicture(){};
+function hoverOverZoom(e){
+    document.body.addEventListener()
+};
 
 function couldNotLoadApi(error){
     alert(`There was a ${error} error! Turn back brave spacefarer!`)

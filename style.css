@@ -45,7 +45,7 @@ body {
 }
 
 #photo_discription{
-    visibility:visible;
+    visibility: hidden;
     display: inline-block;
     text-align: justify;
     border-radius: 10px;
