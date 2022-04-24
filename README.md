@@ -14,12 +14,26 @@ To demonstrate that I can use javascript to dynamicly manipulate and add to the 
 
 Building the skeleton of the HTML. Setting up the HTML page so that it has the heading, body, and appropriate divs to be changed and to place the API in with javascript. Setting placeholder text and  Adding the css page link and javascript page link to begin building it out.
 
-# Second Steps
+# Second Step
 
 Next we are going to use Javascript to fetch the API data from NASA, use functions to turn the data into usuable content, then update the dom with the new information from NASA's space photo object.
 
-# Third Steps
+# Third Step
+
+Create a catch splash page for when the API can't be reached.
+
+# Fourth Step
 
 Then I will be setting the style sheet elements to properly lay out the clean design of the web page as well as prepare the style elements that will be manipulated by Javasript to make the page interactive.
 
-# Fourth Steps
+# Fifth Step
+
+Then I will be the creation of a function that handles changing the discriptions visibility and creating a click event using the function in the render function init()
+
+# Sixth Step
+
+Then the next step is to create the function that adds the css zoom effect and add a hover over event that uses it in the DOM loaded function.
+
+# Final Step
+
+Upload the finished project to githubs web hosting and create a relevent public url that it can be reached by anyone.
