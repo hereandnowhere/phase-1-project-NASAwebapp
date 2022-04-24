@@ -53,7 +53,7 @@ body {
     visibility: hidden;
     display: inline-block;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 3px;
     padding:1%;
     background-color: rgba(0, 0, 0, 0.555);
     max-width: 200%;
@@ -62,7 +62,7 @@ body {
     position:absolute;
     font-family: nasalization, sans-serif;
     font-size: 1.15vw;
-    top: 60%;
+    top: 50%;
     left: auto;
     right:auto;
     transform: translate(-50%, -50%);
