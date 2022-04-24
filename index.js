@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', init);
 function init(){
     fetchNasaApi();
     document.querySelector('img#photo_of_the_day').addEventListener("click", clickForDiscription);
+    document.querySelector('div#photo_discription').addEventListener("click", clickForDiscription);
     return;
 };
 
@@ -63,11 +64,13 @@ function handleNasaApi (data){
     return;
 };
 
-function clickForDiscription(e){
+function clickForDiscription(event){
     const photoDiscription = document.getElementById('photo_discription');
-    const discrptStyle = getComputedStyle(photoDiscription);
-    const discrptVisibility = discrptStyle.visibility;
-    console.log(discriptVisibility);
+    console.log(photoDiscription);
+    const style = window.getComputedStyle(photoDiscription);
+    console.log(style);
+    const discrptVisibility = style.getPropertyValue("visibility");
+    console.log(discrptVisibility);
     if (discrptVisibility == 'hidden'){
         photoDiscription.style.visibility = 'visible';
     } else {
