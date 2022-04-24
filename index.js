@@ -19,8 +19,8 @@ $ Create a function that uses a fetch command to pull NASA's picture of the day
             For additional support, please contact us. When contacting us, please tell us what API you're accessing and provide the following account details so we can quickly find you:
             Account Email: jvine1235@gmail.com
             Account ID: 67a3c90c-dd2a-42c7-8c4e-339035e35789 -->
-~ Creates a function for a mouse over event on the picture to enlarge the picture.
-# Creates a function for a click event that reveals the info about the picture.
+$ Creates a function for a mouse over event on the picture to enlarge the picture.
+$ Creates a function for a click event that reveals the info about the picture.
 $ Creates a function to update the text and img using the NASA API, taking the json as an argument.
 # Have a render function in a DOM content loaded event that calls all css functions, 
     updates the relevant divs, calls the fetch command, and calls the event functions, 
@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init(){
     fetchNasaApi();
+    document.querySelector('img#photo_of_the_day').addEventListener("mouseover", hoverOverZoom)
+    document.querySelector('img#photo_of_the_day').addEventListener("mouseout", hoverOut)
     document.querySelector('img#photo_of_the_day').addEventListener("click", clickForDiscription);
     document.querySelector('div#photo_discription').addEventListener("click", clickForDiscription);
     return;
@@ -66,11 +68,8 @@ function handleNasaApi (data){
 
 function clickForDiscription(event){
     const photoDiscription = document.getElementById('photo_discription');
-    console.log(photoDiscription);
     const style = window.getComputedStyle(photoDiscription);
-    console.log(style);
     const discrptVisibility = style.getPropertyValue("visibility");
-    console.log(discrptVisibility);
     if (discrptVisibility == 'hidden'){
         photoDiscription.style.visibility = 'visible';
     } else {
@@ -78,8 +77,16 @@ function clickForDiscription(event){
     }
 };
 
-function hoverOverZoom(e){
-    document.body.addEventListener()
+function hoverOverZoom(event){
+    if(event){
+        const zoomIn = document.getElementById('photo_of_the_day').style.transform = "scale(1.03)";
+    }
+};
+
+function hoverOut(event){
+    if(event){
+        const zoomOut = document.getElementById('photo_of_the_day').style.transform = "scale(1,1)";
+    }
 };
 
 function couldNotLoadApi(error){
