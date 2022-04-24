@@ -58,7 +58,9 @@ function handleNasaApi (data){
     return;
 };
 
-function clickForDiscription(){};
+function clickForDiscription(e){
+    document.body.addEventListener()
+};
 
 function hoverOverPicture(){};
 

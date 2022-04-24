@@ -9,13 +9,7 @@ body {
     min-height: 100%;
     align-content: center;
     position: absolute;
-    background: linear-gradient(to bottom, rgb(3, 13, 33),black)
-}
-
-#main{
-    min-width: 100%;
-    min-height: 100%;
-    align-content: center;
+    background: linear-gradient(to bottom, rgb(3, 23, 64),black)
 }
 
 #space_photo_header {
@@ -39,7 +33,7 @@ body {
     display: inline-block;
     align-content: center;
     text-align: center;
-    max-width: 98%;
+    max-width: 88%;
     height:auto;
     border-radius: 10px;
 }
