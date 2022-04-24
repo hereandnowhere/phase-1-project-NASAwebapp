@@ -92,6 +92,9 @@ function couldNotLoadApi(error){
 
                         <div id="space_photo">
                             <img id="photo_of_the_day" src="https://piximus.net/media/4767/funny-space-comics-1.jpg">
+                            <div id="photo_info">
+                                <p>There doesn't seem to be anything here, other than empty...SPACE!</p>
+                            </div>
                         </div>
 
                     </div>`;

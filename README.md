@@ -1,5 +1,5 @@
 # phase-1-project-NASAwebapp
-This is my phase 1 project demonstrating what I've learned in the first phase and putting it all together. I will be using NASA's free AstroPhoto of the day API to build a dynamic rendering of this popular API, that will have some click and hover events, as well as a slick, modern css design.
+This is my phase 1 project demonstrating what I've learned in the first phase and putting it all together. I will be using NASA's free AstroPhoto of the day API to build a dynamic rendering of this popular API, that will have a click event to reveal the discription of the photo or hide it accordingly, and hover over event that will zoom the picture in a little, as well as a slick css design.
 
 
 # Goals for the project

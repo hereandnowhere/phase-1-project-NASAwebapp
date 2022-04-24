@@ -25,7 +25,7 @@ body {
 #space_photo{
     align-content: center;
     text-align: center;
-    position:absolute;
+    position: absolute;
     padding: 2vw 4vw;
 }
 
@@ -42,12 +42,13 @@ body {
     color:rgb(202, 213, 223);
     font-family: nasalization, 'Lucida Sans', Arial, sans-serif; 
     font-size: auto;
+    padding: 2vw 4vw;
 }
 
 #photo_discription{
     visibility: hidden;
     display: inline-block;
-    text-align: justify;
+    text-align: center;
     border-radius: 10px;
     padding:1%;
     background-color: rgba(0, 0, 0, 0.555);
@@ -56,7 +57,7 @@ body {
     height: auto;
     position:absolute;
     font-family: nasalization, sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     top: 45%;
     left: auto;
     right:auto;
